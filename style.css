@@ -1,0 +1,101 @@
+.banner{
+    min-height: 60vh;
+    /* let's talk more about this */
+    background-image: url("img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-size: 10.5rem; 
+    /* come back to this "responsive values" issue */
+    color: white;
+    filter: blur(3px) brightness(70%);
+}
+
+.bannerText{
+    min-height: 60vh;
+    width: 100%;
+    display: flex; 
+    position: absolute; 
+    top: 5vh;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 10rem;
+    color: white;
+    }
+
+    /* * *{border: 1px solid blue;} */
+
+.rowHeight{
+    min-height: 25vh;
+    background: lightgray;
+}
+
+.rowIcon{
+    margin: 1rem;
+    font-size: 5rem;
+}
+
+.rowTitle{
+    font-size: 2rem;
+    font-weight: bold; 
+    margin: 1rem 0;
+}
+
+.image1{
+    background-image:url("img/Screenshot1.png") ;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image2{
+    background-image:url("img/Screenshot2.png") ;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image3{
+    background-image:url("img/day_planner.png") ;
+    background-size: cover;
+    background-position: center top;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+}
+
+
+.image1, .image2, .image3 {
+    min-height: 25rem;
+}
+
+.tiles{
+    min-height: 32vw;
+}
+
+/* .tiles *{
+    border: 1px solid red;
+} */
+
+.contentWrap{
+    margin: 10rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    /* let's talk more about this --- i.e., rotation of flex direction */
+}
+
+.smallContent{
+    margin: 2rem;
+}
+
+
+@media only screen and (max-width: 768px){
+    .contentWrap{
+        margin: 3rem;
+    }
+
+    .bannerText {
+        font-size: 4rem;
+    }
+}
